@@ -2,6 +2,7 @@ import base64
 import os
 from openai import OpenAI
 
+#Add annotation
 client = OpenAI(
     api_key="sk-ILO5zxFy0f",
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
