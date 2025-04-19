@@ -13,6 +13,7 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode("utf-8")
 
+#Add annotation
 result = []
 for file_name in ["巧克力.png","豆奶.png"]:
     completion = client.chat.completions.create(
@@ -56,4 +57,5 @@ for file_name in ["巧克力.png","豆奶.png"]:
 
     result.append(completion.choices[0].message.content)
 
+#Add annotation
 print(result)
